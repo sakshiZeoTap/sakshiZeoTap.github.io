@@ -11,27 +11,33 @@
 </head>
 <body>
     <div class="registration-form">
-        <form method="get">
+        <form action="/" method="get">
             <div class="form-icon">
                 <img src="./icon/zeotap_icon.jpg">
             </div>
             <div class="form-group">
-                <input type="text" name="username" class="form-control item" id="Filters" placeholder="Filters">
+                <select id="filter-select" name ="filter-select" class="form-control item">
+                    <option value="select-filter">Select Filter</option>
+                    <option value="f61">Gender - Female , Age > 60</option>
+                    <option value="f60">Gender - Female , Age < 60</option>
+                    <option value="m61">Gender - Male, Age < 60</option>
+                    <option value="m60">Gender - Male, Age > 60</option>
+                </select>
             </div>
             <div class="form-group">
-                    <select class="form-control item"> 
-                        <option>Select Country</option>
-                       <option>United states</option>
-                       <option>India</option>
-                       <option>Spain</option>
-                       <option>France</option>
+                    <select id="country-select" class="form-control item"> 
+                        <option value="select-country">Select Country</option>
+                       <option value="usa">United states</option>
+                       <option value="india">India</option>
+                       <option value="spain">Spain</option>
+                       <option value="france">France</option>
                     </select>
             </div>            
             <div class="form-group">
-                <input type="number" name="number" min="0" class="form-control item" id="number-of-segments" placeholder="Number of Segments">
+                <input type="number" name="Channel-Id" min="0" class="form-control item" id="channel-id" placeholder="Channel Id">
             </div>
             <div class="form-group">
-                <button id="submit" type="button" class="btn btn-block create-account">Submit</button>
+                <button id="submit" type="button" class="btn btn-block submit-form">Submit</button>
             </div>
         </form>
     </div>

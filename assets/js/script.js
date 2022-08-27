@@ -1,3 +1,7 @@
 $("#submit").click(function( event ) {
-  alert( "Segment Data is Submitted " );
+  $('#filter-select').val("select-filter")
+  $('#country-select').val("select-country")
+  $('#channel-id').val("")
+  alert( "Form is Submitted" );
+
 });
